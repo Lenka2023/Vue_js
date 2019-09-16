@@ -10,7 +10,7 @@
    	<div id="app">
    		<span @mouseover="changeText">Текст</span>
   		<p>{{title}}</p>
-  		<p v-bind:class="styleCSS">Цвет: {{styleCSS}}</p>
+  		<p :class="styleCSS">Цвет: {{styleCSS}}</p>
   		<input type="text" v-on:input="styleCSS=$event.target.value">
   	</div>
   	<script src="js/main.js"></script>	
